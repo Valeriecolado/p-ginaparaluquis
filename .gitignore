@@ -1,18 +1,144 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartitas para mi amor</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive, 'Lato', sans-serif;
+            background-color: #ffe4e1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+        header {
+            background-color: #ffb6c1;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .section h2 {
+            background-color: #ffb6c1;
+            margin: 0;
+            padding: 10px;
+            color: #fff;
+            font-size: 1.8em;
+        }
+
+        .section-content {
+            padding: 20px;
+        }
+
+        .note {
+            margin-bottom: 15px;
+            background: #ffe4e1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #ff69b4;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 100px;
+            border-radius: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .poem {
+            font-style: italic;
+            border-left: 5px solid #ff69b4;
+            padding-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ffb6c1;
+            color: #fff;
+        }
+
+        a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cartitas para mi amor</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sección de notas -->
+        <div class="section">
+            <h2>Notas diarias</h2>
+            <div class="section-content">
+                <div class="note">Te amo cada día más. ❤️</div>
+                <div class="note">Gracias por hacerme tan feliz. 🌸</div>
+                <div class="note">Hoy pensé en nosotros y sonreí. 😊</div>
+            </div>
+        </div>
+
+        <!-- Sección de fotos -->
+        <div class="section">
+            <h2>Nuestras fotos</h2>
+            <div class="section-content gallery">
+                <img src="foto1.jpg" alt="Foto 1">
+                <img src="foto2.jpg" alt="Foto 2">
+                <img src="foto3.jpg" alt="Foto 3">
+            </div>
+        </div>
+
+        <!-- Sección de música -->
+        <div class="section">
+            <h2>Nuestras canciones</h2>
+            <div class="section-content">
+                <p><a href="https://www.youtube.com/watch?v=example" target="_blank">Canción 1</a></p>
+                <p><a href="https://www.youtube.com/watch?v=example" target="_blank">Canción 2</a></p>
+                <p><a href="https://www.youtube.com/watch?v=example" target="_blank">Canción 3</a></p>
+            </div>
+        </div>
+
+        <!-- Sección de poemas -->
+        <div class="section">
+            <h2>Poemas para ti</h2>
+            <div class="section-content">
+                <div class="poem">Eres la luz que ilumina mis días,<br>el sol que calienta mis mañanas,<br>la melodía que llena mi alma.</div>
+                <div class="poem">Te quiero más allá de las estrellas,<br>te amo más que las palabras puedan decir.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Con todo mi amor, para ti. 💖</p>
+    </footer>
+</body>
+</html>
